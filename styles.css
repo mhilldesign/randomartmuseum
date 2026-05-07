@@ -1,0 +1,374 @@
+/*
+
+.forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+*/
+
+.backgroundBody {
+  background-color: #f7f1e4;
+  background-image: url(test-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: absolute;
+}
+
+.displayBackground {
+  background-color: #f7f1e4;
+  background-image: url(display-background.jpg);
+  background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0;
+  display: flex;
+  flex: wrap row;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  z-index: 50;
+  margin-left: 15vw;
+  margin-top: 1vh;
+  overflow: hidden;
+}
+
+h1 {
+  color: #000;
+  font-family: "Forum", serif;
+  font-size: 6vh;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+button {
+  margin-top: 5vh;
+  text-align: center;
+  width: 20%;
+  height: 5vh;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+#artImage {
+    transition: transform 0.3s ease;
+    transform-origin: center center; 
+    cursor: zoom-in;
+    position: relative;
+    z-index: 40;
+    margin-left: 21vw;
+}
+
+#artImage.enlarged {
+    cursor: zoom-out;
+    position: relative;
+    z-index: 60;
+}
+
+#artTable {
+  border-collapse: collapse;
+  width: 300px;
+  margin-top: 10px;
+}
+
+#artTable,
+#artTable td,
+#artTable th {
+  border: 1px solid black;
+}
+
+#artTable td {
+  padding: 4px 8px;
+}
+
+.information {
+  position: relative;
+width: 20%;
+height: 100vh;
+position: absolute
+}
+
+.resultDisplay {
+  margin-top: 20vh;
+  width: auto;
+  height: auto;
+  max-width: 60vw;
+  max-height: 60vh;
+  position: fixed;
+  
+}
+
+#loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #D97B66;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  margin-bottom: 5vh ;
+  margin-left: 8vw;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+#artLink {
+  display: none;
+}
+
+#contentContainer {
+  width: 80vw;
+  margin-left: 4vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  padding-bottom: 10vw;
+}
+
+#logo {
+    width: 8vw;
+    height: 4vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 1vw;
+    padding: 40px;
+    position: fixed;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#homepageButton {
+  margin-left: 32vw;
+  text-align: center;
+  width: 59vw;
+  height: 100vh;
+  margin-top: -16vh;
+  background-color: transparent;
+  border-radius: 9px;
+  border-color: transparent;
+  position: absolute;
+}
+
+#aboutButton {
+  margin-top: 63vh;
+  margin-left: 8.5vw;
+  text-align: center;
+  width: 14vw;
+  height: 30vh;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vh;
+  position: fixed;
+}
+
+#aboutContainer {
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: 30vh
+}
+
+#aboutText {
+  margin-top: 30vh;
+  margin-left: 5vw;
+  text-align: center;
+  width: 20%;
+  height: 5vh;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vh;
+}
+
+#informationBlock {
+  width: 12vw;
+  margin-left: 5vw;
+  margin-top: 30vh;
+  line-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.artBlock {
+  width: 40vw;
+  text-align: center;
+}
+
+#randomArtBtn {
+  width: 20vw;
+}
+
+.mobile {
+  display: none;
+}
+
+.homepageLogo {
+  width: 11vw;
+  height: auto;
+  margin-left: 5vw;
+}
+
+.doubleClick {
+  font-size: 14pt;
+  color:#000;
+  margin-top: 90vh;
+  margin-left: 50vw;
+  position: fixed;
+}
+
+#createButton {
+  position: fixed;
+  margin-top: 1vh;
+  margin-left: 77vw;
+  width: 7vw;
+  height: auto;
+  background-color: transparent;
+  border: transparent;
+}
+
+.collageButton {
+  width: 6vw;
+  height: auto;
+}
+
+#artContainer {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 10px;
+  margin-top: 20vh;
+  margin-left: 4vw;
+  width: 16vw;
+  height: 5vw;
+}
+
+.art-item {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  touch-action: none;
+}
+
+
+
+@media (min-width: 1000px) {
+ 
+  .backgroundBody {
+  background-color: #f7f1e4;
+  background-image: url(test-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: absolute;
+}
+
+.displayBackground {
+  background-color: #f7f1e4;
+  background-image: url(display-background.jpg);
+  background-size: cover;
+  background-attachment: absolute;
+}
+
+}
+
+@media (max-width: 1000px) {
+ 
+  .backgroundBody {
+  background-color: #f7f1e4;
+  background-image: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.displayBackground {
+  background-color: #f7f1e4;
+  background-image: none;
+  flex-direction: column-reverse;
+}
+
+.informationBlock {
+  width: 40vw;
+  margin-left: 30vw;
+  margin-top: 10vh;
+  line-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 15pt;
+}
+
+.artBlock {
+  width: 60vw;
+  text-align: center;
+}
+
+#aboutText {
+  display: none;
+}
+
+
+#homepageButton {
+  text-align: center;
+  width: 50vw;
+  height: 20vh;
+  margin-top: 23vh;
+  background-color: #fff;
+  border-radius: 9px;
+  border-color: #000;
+  position: absolute;
+}
+
+.mobile {
+  display: block;
+}
+
+.doubleClick {
+  display: none;
+}
+
+}
