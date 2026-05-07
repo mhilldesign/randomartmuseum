@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <title>Random Art Museum</title>
+</head>
+
+<body class="displayBackground">
+    <nav>
+        <a href="index.html">
+            <div id="logo"></div>
+        </a>
+        <div class="createButton">
+            <button id="createButton"><img src="createbutton.png" class="collageButton"></button>
+        </div>
+    </nav>
+
+
+    <div id="informationBlock">
+        <span id="loader"></span>
+        <div class="information">
+
+            <strong id="artTitle"></strong><br>
+            Artist: <span id="artArtist"></span><br>
+            Year: <span id="artYear"></span><br>
+            Medium: <span id="artMedium"></span><br>
+            Museum: <span id="artMuseum"></span>
+            <br>
+            <a id="artLink" href="#" target="_blank">met info page</a>
+            <br>
+            <button id="randomArtBtn">Art Button</button>
+        </div>
+    </div>
+    <div id="artContainer" style="display: none;"></div>
+    <div class="artblock">
+        <img id="artImage" alt="Artwork" class="resultDisplay">
+    </div>
+    <p class="doubleClick">Double click the image to zoom in.</p>
+    </div>
+
+    <script src="art.js"></script>
+    <script src="scripts.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
